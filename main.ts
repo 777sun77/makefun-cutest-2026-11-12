@@ -11,3 +11,4 @@ if (size > 1048576) {
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || '/output';
 mkdirSync(outDir, { recursive: true });
 copyFileSync(source, `${outDir}/entry.png`);
+console.log(`Wrote ${outDir}/entry.png (${size} bytes)`);
